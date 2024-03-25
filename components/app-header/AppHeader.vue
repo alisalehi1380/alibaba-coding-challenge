@@ -6,7 +6,7 @@
                 <span class="text-xl font-extrabold">{{ title }}</span>
                 <app-button @click="emit('toggle-dark-mode')" class="font-semibold" size="md" flat>
                     <template #prepend> <i :class="_isDark ? 'icon-sun' : 'icon-moon'"></i> </template>
-                    Dark Mode
+                    {{ _isDark ? 'Light Mode' : 'Dark Mode' }}
                 </app-button>
             </div>
         </div>
